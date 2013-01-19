@@ -12,8 +12,9 @@ There are two services that will be provided by TMRS -
 
 In addition to above, a utility program for compressing Tiger Map data will also be created.  
 
-![ScreenShot](http://old.sumitbirla.com/software/images/test.png)
-
+<p align="center">
+        <img src="http://old.sumitbirla.com/software/images/test.png" alt="screenshot"/>
+</p>
 
 Installation
 -------------
