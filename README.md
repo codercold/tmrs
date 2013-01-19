@@ -21,14 +21,14 @@ TRMS makes use of the GD library available at http://www.boutell.com/gd.  Make s
 
 Here is an output from ldd:
 
-[sumit@europa tmrs]$ ldd tmrs
-        libm.so.6 => /lib/libm.so.6 (0x4001c000)
-        libgd.so.2 => /usr/local/lib/libgd.so.2 (0x4003d000)
-        libpng12.so.0 => /usr/lib/libpng12.so.0 (0x40071000)
-        libc.so.6 => /lib/libc.so.6 (0x40094000)
-        libfreetype.so.6 => /usr/lib/libfreetype.so.6 (0x401b2000)
-        libz.so.1 => /usr/lib/libz.so.1 (0x401fb000)
-        /lib/ld-linux.so.2 => /lib/ld-linux.so.2 (0x40000000)   
+        [sumit@europa tmrs]$ ldd tmrs
+                libm.so.6 => /lib/libm.so.6 (0x4001c000)
+                libgd.so.2 => /usr/local/lib/libgd.so.2 (0x4003d000)
+                libpng12.so.0 => /usr/lib/libpng12.so.0 (0x40071000)
+                libc.so.6 => /lib/libc.so.6 (0x40094000)
+                libfreetype.so.6 => /usr/lib/libfreetype.so.6 (0x401b2000)
+                libz.so.1 => /usr/lib/libz.so.1 (0x401fb000)
+                /lib/ld-linux.so.2 => /lib/ld-linux.so.2 (0x40000000)   
 
 If you have the above, it is a simple matter of downloading the source code and typing 'make' to compile. 
 
@@ -46,12 +46,12 @@ Assume that TIGER data files for your county are at: /tmrs/data/TIGER/
 
 At this point, you should have two executables: /tmrs/src/tmrs and /tmrs/src/TIGER/convert.  Convert is used for processing TIGER data files into a form which tmrs can understand.  Execute the following:
 
-/tmrs/src/TIGER/convert -d /tmrs/data/TIGER
+        /tmrs/src/TIGER/convert -d /tmrs/data/TIGER
 
 This will create a few files in the data directory.  Now you are ready for drawing maps.  The first step is to locate your address:
 
-/tmrs/src/tmrs -d /tmrs/data/TIGER -a 4202,E,Fowler,Ave,*
-/tmrs/src/tmrs -d /tmrs/src/TIGER -m PNG,640,480,100,28054495,-82416015 > map.png
+        /tmrs/src/tmrs -d /tmrs/data/TIGER -a 4202,E,Fowler,Ave,*
+        /tmrs/src/tmrs -d /tmrs/src/TIGER -m PNG,640,480,100,28054495,-82416015 > map.png
 
 View your new map.png.
 
@@ -73,6 +73,6 @@ ESRI Shapefiles:  ESRI makes Tiger 2000 data available in Shapefile format.  The
 
 Navteq:  Navteq data is considered to be the most accurate of the bunch.  It is not free, however.  You may have to contact the company to find out the pricing. Sample data can be downloaded at http://www.adci.com
 
-GDT: Coming soon.
+GDT: ???.
 
 
